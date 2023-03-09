@@ -1,0 +1,173 @@
+main.grid {
+    display: grid;
+}
+
+#server-error {
+    margin: 0 .6rem;
+}
+
+#overview {
+    text-align: center;
+}
+
+#details {
+    background-image: url("../images/delorean.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    height: calc(60vw);
+}
+
+#overview h2,
+#overview p {
+    text-align: left;
+    position: relative;
+    font-size: 1rem;
+    color: var(--button-color);
+    z-index: 2;
+    margin: 0 .6rem;
+}
+
+#overview p {
+    font-size: .9rem;
+}
+
+#overview a {
+    display: block;
+    background-color: var(--button-color);
+    color: #fff;
+    padding: 12px 0;
+    width: 150px;
+    font-size: 18px;
+    border: 1px solid var(--nav);
+    margin: 1.2rem auto;
+    margin-bottom: 0;
+}
+
+#overview a:hover {
+    background-color: var(--button-hover);
+    color: var(--nav);
+}
+
+#upgrades {
+    grid-row: 4;
+    margin: .3rem;
+}
+
+#upgrades h3 {
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align: left;
+}
+
+#upgrades-grid {
+    display: grid;
+    grid-template-columns: 1fr .5rem 1fr;
+    grid-template-rows: repeat(2, 100px 50px);
+    text-align: center;
+}
+
+#upgrades-grid div {
+    background-color: var(--nav-hover);
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--nav);
+}
+
+#upgrades-grid img {
+    margin: 10px;
+}
+
+#upgrades-grid a {
+    text-decoration: underline;
+}
+
+#flux-cap-img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#flux-cap {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#flame-img {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#flame {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#sticker-img {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#sticker {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#hub-cap-img {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#hub-cap {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+#reviews li {
+    margin: .5rem 0;
+}
+
+@media only screen and (min-width: 750px) {
+    main.grid {
+        grid-template-columns: 1fr 100px 1fr;
+    }
+
+    #overview {
+        grid-column: 1/4;
+        height: 500px;
+        background-image: url('../images/delorean.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    #details {
+        height: 5.5rem;
+        background-image: none;
+    }
+
+    #overview h2 {
+        font-size: 1.2rem;
+        margin: 1.5rem 0 .2rem 2rem;
+    }
+
+    #overview p {
+        font-size: 1rem;
+        margin: 0 0 0 2rem;
+    }
+
+    #overview a {
+        margin: 1.5rem 0 0 2rem;
+    }
+
+    #upgrades {
+        grid-column: 1;
+        grid-row: 3;
+        margin-left: 2rem;
+    }
+
+    #reviews {
+        grid-column: 3;
+        grid-row: 3;
+    }
+}

@@ -1,0 +1,78 @@
+/*
+    Vehicle Managment Styling
+*/
+
+.button {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    background: var(--button-color);
+    color: white;
+    margin: .8rem .5rem 0 .5rem;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.button:hover {
+    transform: scale(1.03);
+    background: var(--button-hover);
+    color: var(--nav);
+}
+
+#vehicle-management p {
+    margin: 0 .5rem;
+}
+
+#vehicle-management select {
+    width: 98%;
+    margin: 0 1% .5rem;
+}
+
+table {
+    width: 98%;
+    margin: 0 auto;
+}
+
+table tr:nth-child(2n),
+table thead tr {
+    background: var(--sub-nav);
+    color: white;
+}
+
+table tr:nth-child(2n-1):not(thead tr) {
+    background: var(--nav);
+    color: white;
+}
+
+table tr:nth-child(2n-1) td:not(:nth-child(1), thead tr td) {
+    background: var(--button-color);
+    padding: 0;
+}
+
+table tr:nth-child(2n) td:not(:nth-child(1), thead tr td) {
+    background: var(--nav-hover);
+    padding: 0;
+}
+
+table tr td:hover:not(:nth-child(1), thead tr td) {
+    background: var(--button-hover);
+}
+
+table a {
+    display: block;
+    padding: 8px;
+    color: white;
+}
+
+table tr td:hover:not(:nth-child(1), thead tr td) a {
+    color: var(--nav);
+}
+
+@media only screen and (min-width: 750px) {
+
+    .button {
+        margin: .8rem auto 0 auto;
+        max-width: 420px;
+    }
+
+}

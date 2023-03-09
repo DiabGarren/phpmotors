@@ -1,0 +1,35 @@
+/*
+    Header Styling
+*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 88px;
+    align-items: center;
+}
+
+header div {
+    color: var(--nav);
+    text-align: right;
+    margin-right: 1rem;
+    height: 72px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+#my-account {
+    grid-row: 1/3;
+}
+
+header p {
+    margin: 0;
+    grid-column: 1;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: var(--button-color);
+}

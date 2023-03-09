@@ -1,0 +1,62 @@
+#user-info,
+#vehicle-paragraph {
+    margin: 1rem;
+}
+
+#vehicle-paragraph a:hover {
+    text-decoration: underline;
+}
+
+#admin-view ul,
+#vehicle-paragraph p {
+    list-style: none;
+    padding: 0;
+    margin: 0 .2rem;
+}
+
+#update-acc,
+#vehicle-link {
+    display: block;
+    padding: .5rem;
+    background: var(--button-color);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+#update-acc:hover,
+#vehicle-link:hover {
+    background: var(--button-hover);
+    color: var(--nav);
+    transform: scale(1.03);
+}
+
+#admin-view h2 {
+    margin: 0;
+}
+
+@media (min-width: 750px) {
+    #admin-view {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #user-info {
+        grid-column: 1;
+    }
+
+    #admin-view .form-warning {
+        grid-column: 1/3;
+    }
+
+    #user-info,
+    #vehicle-paragraph {
+        margin: 0 1rem;
+    }
+
+    #update-acc,
+    #vehicle-link {
+        width: fit-content;
+    }
+}

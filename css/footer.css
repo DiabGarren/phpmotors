@@ -1,0 +1,18 @@
+/* 
+    Footer Styling 
+*/
+
+footer {
+    padding: .5rem;
+}
+
+footer hr {
+    background-color: var(--nav);
+    height: 5px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 13px;
+    color: var(--nav)
+}
